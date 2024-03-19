@@ -1,0 +1,122 @@
+/* navbar.css - Styling for the Navbar component */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .gym-text {
+    color: var(--primary-color);
+    margin-left: 5px;
+  }
+  
+  .menu-icon {
+    display: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
+  }
+  
+  @media screen and (max-width: 960px) {
+    .navbar-container {
+      padding: 0 30px;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      background-color: rgba(0, 0, 0, 0.95);
+    }
+  
+    .nav-menu.active {
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-item {
+      height: auto;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    .nav-link {
+      width: 100%;
+      display: block;
+      padding: 10px 0;
+      font-size: 1.2rem;
+      justify-content: center;
+    }
+  
+    .nav-link:hover {
+      border-bottom: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }

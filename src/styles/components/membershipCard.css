@@ -1,0 +1,127 @@
+/* membershipCard.css - Styling for the MembershipCard component */
+.membership-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .membership-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .popular {
+    border: 2px solid var(--primary-color);
+  }
+  
+  .popular-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .card-header {
+    margin-bottom: 25px;
+  }
+  
+  .card-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+  }
+  
+  .price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-right: 5px;
+  }
+  
+  .period {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .card-body {
+    margin-bottom: 25px;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .features li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .features li:last-child {
+    border-bottom: none;
+  }
+  
+  .icon {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .card-footer {
+    padding-top: 10px;
+  }
+  
+  .join-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .join-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .membership-card {
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .card-header h3 {
+      font-size: 1.5rem;
+    }
+    
+    .amount {
+      font-size: 2rem;
+    }
+  }
